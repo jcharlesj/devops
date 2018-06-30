@@ -12,7 +12,6 @@ def githubCredentials = 'charles'
 def results_dir = ''
 
 // Remove slashes from branch name (feature, hotfix...)
-buildContainerName = buildContainerName.replaceAll("/", "_");
 /*---------------------------------------------------------- JOB PROPERTIES --*/
 /* Only keep the 5 most recent builds. */
 properties([
