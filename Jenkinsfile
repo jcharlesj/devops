@@ -28,6 +28,9 @@ node(nodeLabel) {//start node
   timestamps {//start timestamps
     ansiColor('xterm') {//start ansicolor
       echo "Testing 1 2 3"
+      stage(Sourcecode_Checkout) {
+        echo "code checkout"
+      }        
     }
   }
 }
