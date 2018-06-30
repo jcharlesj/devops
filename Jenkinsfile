@@ -7,7 +7,7 @@ import java.nio.file.Files
 import jenkins.model.Jenkins
 
 // vim: tabstop=2 shiftwidth=2 softtabstop=2 expandtab cc=80 ft=groovy
-def nodeLabel = 'localhost'
+def nodeLabel = 'local'
 def githubCredentials = 'charles'
 def results_dir = ''
 
