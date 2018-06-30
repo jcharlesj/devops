@@ -36,3 +36,4 @@ node(nodeLabel) {//start node
           echo "testing 1 2 3"
           }
       }
+  }
