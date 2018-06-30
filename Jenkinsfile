@@ -21,9 +21,8 @@ properties([
       artifactDaysToKeepStr: '',
       artifactNumToKeepStr: '', ,
       daysToKeepStr: '5',
-      numToKeepStr: '5')
+      numToKeepStr: '5'),
     ),
-   gitLabConnection: "${gitlabConn}"]
 ])
 
 node(nodeLabel) {//start node
