@@ -28,13 +28,7 @@ properties([
 node(nodeLabel) {//start node
   timestamps {//start timestamps
     ansiColor('xterm') {//start ansicolor
-      // some tools could fail if no TERM is defined
-      env.TERM = env.TERM ?: 'xterm-color'
-      try {
-/*---------------------------------------------------------- STAGE CHECKOUT --*/
-        stage("Checkout") { //start stage
-          echo "testing 1 2 3"
-          }
-      }
+      echo "Testing 1 2 3"
+    }
   }
 }
