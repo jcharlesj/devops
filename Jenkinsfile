@@ -55,5 +55,4 @@ node(nodeLabel) {//start node
     }
   }
 }
-}
 
