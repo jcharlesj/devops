@@ -23,14 +23,35 @@ properties([
       numToKeepStr: '5'),
     ),
 ])
-
+try {
 node(nodeLabel) {//start node
   timestamps {//start timestamps
     ansiColor('xterm') {//start ansicolor
       echo "Testing 1 2 3"
       stage(Sourcecode_Checkout) {
         echo "code checkout"
-      }        
+      }       
+      stage(Build) {
+        echo "code is in build stage"
+        echo "make build"
+      }
+      stage(unittest) {
+        echo "code is in unittest stage"
+        echo "make test"
+        step(coverity) {
+          echo "cov-analysis.sh"
+        }      
+      }
+      stage(sonaranalysis) {
+        echo "Load sonar.properties"
+      }      
     }
   }
+}
+}
+catch (e) {
+  echo "Error caught"
+}
+finally {
+ echo "cleanup is in process" 
 }
