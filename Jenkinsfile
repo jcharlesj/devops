@@ -44,7 +44,8 @@ node(nodeLabel) {//start node
       }
       stage("sonaranalysis") {
         echo "Load sonar.properties"
-      }  
+      }
+      }
       catch (e) {
         echo "Error caught"
       }
