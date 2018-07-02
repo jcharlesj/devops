@@ -40,7 +40,6 @@ node(nodeLabel) {//start node
         echo "make test"
         echo "cov-analysis.sh"
         }      
-      }
       stage("sonaranalysis") {
         echo "Load sonar.properties"
       }
