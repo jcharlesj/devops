@@ -38,8 +38,7 @@ node(nodeLabel) {//start node
       stage("unittest") {
         echo "code is in unittest stage"
         echo "make test"
-        steps("coverity") {
-          echo "cov-analysis.sh"
+        echo "cov-analysis.sh"
         }      
       }
       stage("sonaranalysis") {
