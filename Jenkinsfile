@@ -22,6 +22,7 @@ properties([
       daysToKeepStr: '5',
       numToKeepStr: '5'),
     ),
+    triggers { cron('H */1 * * 1-5') }
 ])
 node(nodeLabel) {//start node
   timestamps {//start timestamps
