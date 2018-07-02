@@ -22,7 +22,9 @@ properties([
       daysToKeepStr: '5',
       numToKeepStr: '5'),
     ),
-    cron('H */1 * * 1-5'),
+  pipelineTriggers([
+    cron('*/1 * * * *')
+  ]),
 ])
 node(nodeLabel) {//start node
   timestamps {//start timestamps
